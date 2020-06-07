@@ -1,0 +1,89 @@
+*{
+  box-sizing: border-box;
+
+}
+
+.text{
+  padding: 0px 5px 0px 5px;
+}
+
+.p1, .p2, .p3{
+     position: relative;
+     border: 2px solid black;
+     width: 40%;
+     font-size: 22px;
+     text-align: center;
+     left: 60.6%;
+     margin-top: -2px;
+     margin-bottom: -6px;
+     font-weight: bold;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.row > div {
+
+   border: 2px solid black;
+   width: 250px;
+   float: left;
+   margin-left: 2%;
+   background: grey;
+   margin-bottom:20px;
+   font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.p1{
+  background: darksalmon;
+}
+
+.p2{
+  background: darkred;
+  color: white;
+}
+
+.p3{
+  background: darkgoldenrod;
+}
+
+.row{
+  margin-top: 5%;
+}
+
+
+
+@media (min-width: 992px){
+  .row >  .col-lg-3{
+    width:31%;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+  .row > .col-md-6{
+    width: 47%;
+
+  }
+
+
+  .row > .col-md-12{
+   width: 96%;
+
+  }
+
+  .p3{
+    left: 60.3%;
+  }
+}
+
+@media (max-width: 767px ){
+  .row > .col-sm-12{
+    width: 96%;
+  }
+
+  .p1, .p2, .p3{
+    left:60.3%;
+  }
+}
